@@ -110,7 +110,7 @@ If `Γ, x:τₓ ⊢ e : τ` and `Γ ⊢ v : τₓ` then `Γ ⊢ e[x:=v] : τ`.
 * ...
 * `Γ, x:τₓ ⊢ b : bool`: Then `b[x:=v]` is `b`, and `Γ ⊢ b : bool`
 * `Γ, x:τₓ ⊢ (and e₁ e₂) : bool`: Then we know that `Γ, x:τₓ ⊢ e₁ : bool` and `Γ, x:τₓ ⊢ e₂ : bool`. We get by the induction hypothesis that `Γ ⊢ e₁[x:=v] : bool` and `Γ ⊢ e₂[x:=v] : bool`. We are done by the rule `[and]` since `(and e₁[x:=v] e₂[x:=v]) = (and e₁ e₂)[x:=v]`
-* The case for `or` is the same and the case for `not` is the same with only one subexpression.
+* The case for `or` is the same and the case for `not` is the same with only one subterm.
 
 #### Preservation lemma:
 If `• ⊢ e₁ : τ` and `e₁ ⟶ e₂` then `• ⊢ e₂ : τ`.
