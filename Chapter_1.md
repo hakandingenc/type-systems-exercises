@@ -75,12 +75,12 @@ Modified typing rules:
 Γ ⊢ (cons e₁ e₂) : list τ
 
 Γ ⊢ e : list τ
---------------------------[car]
+----------------[car]
 Γ ⊢ (car e) : τ
 
 Γ ⊢ e : list τ
---------------------------[cdr]
-Γ ⊢ (car e) : list τ
+---------------------[cdr]
+Γ ⊢ (cdr e) : list τ
 ```
 
 ## Exercise 5
