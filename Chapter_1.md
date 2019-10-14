@@ -66,6 +66,9 @@ Let _v_ be an arbitrary value. By the grammar, we have 3 cases:
 
 Modified typing rules:
 
+-----------------[nil]
+Γ ⊢ nil : list τ
+
 Γ ⊢ e₁ : τ
 Γ ⊢ e₂ : list τ
 --------------------------[cons]
