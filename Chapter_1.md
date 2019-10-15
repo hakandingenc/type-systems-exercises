@@ -21,7 +21,7 @@
         | (or v E)
         | (not E)
 
-    Additional reduction rules
+    Additional reduction rules:
 
     E[(and b₁ b₂)] ⟶ E[b₁ ∧ b₂]
     E[(or b₁ b₂)] ⟶ E[b₁ ∨ b₂]
