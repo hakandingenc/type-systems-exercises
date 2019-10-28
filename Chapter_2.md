@@ -1,6 +1,6 @@
 # Chapter 2 Exercises: The simply-typed lambda calculus λ-st
 
-## Exercise 1
+## Exercise 8
 
     τ ::= ...
         | (* τ τ)
@@ -39,7 +39,7 @@
     ------------------[pr₂]
     Γ ⊢ (pr₂ e) : τ₂
 
-## Exercise 2
+## Exercise 9
 
     τ ::= ...
         | (+ τ τ)
