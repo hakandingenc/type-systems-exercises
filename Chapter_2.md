@@ -78,3 +78,20 @@
     Γ, y:τ₂ ⊢ e₂ : τ
     --------------------------------[match]
     Γ ⊢ (match e [x e₁] [y e₂]) : τ
+
+## Exercise 11
+
+`mult = (λ n nat (λ m nat (rec n [0] [x y (add m y)])))`
+
+## Exercise 12
+
+`fac = (λ n nat (rec n [1] [x y (mult n y)]))`
+
+## Exercise 13
+
+`/2 = (λ n nat (rec n [0] [x y (sub x y)]))`
+`sub = ...`
+
+## Exercise 19
+
+`add = (fix r (→ nat nat nat) (λ n nat (λ m nat (if0 n m [x (s (r x))]))))`
