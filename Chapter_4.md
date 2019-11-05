@@ -1,7 +1,7 @@
 # Chapter 4 Exercises: The polymorphic lambda calculus λ-2
 
 Note that we write `eₐ` to denote `(Ap e a)`. We use commas to denote nested `Ap`s.
-We also write `(ap f x ...)` to denote curried application of `f` to `x ...`.
+We also write `(ap f x ...)` to denote curried application of `f` to `x ...`. Same for `Ap`.
 
 ## Exercise 26
 
