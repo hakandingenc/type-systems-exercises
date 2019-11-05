@@ -85,7 +85,7 @@
 
 ## Exercise 12
 
-`fac = (λ n nat (rec n [1] [x y (mult n y)]))`
+`fac = (λ n nat (rec n [1] [x y (mult (succ x) y)]))`
 
 ## Exercise 13
 
