@@ -5,14 +5,14 @@ We also write `(ap f x ...)` to denote curried application of `f` to `x ...`. Sa
 
 ## Exercise 26
 
-`comp = (∧ a (∧ b (∧ c (λ g (→ b c) (λ f (→ a b) (λ y a (ap g (ap f y))))))))`
+`comp = (∧ a (∧ b (∧ c (λ g (→ b c) (λ f (→ a b) (λ y a (ap g (ap f y))))))))`  
 `succ = (λ n Nat (∧ a (λ f (→ a a) (ap compₐ,ₐ,ₐ f (ap nₐ f)))))`
 
 ## Exercise 27
 
-`add = (λ n Nat (λ m Nat (∧ a (λ f (→ a a) (ap compₐ,ₐ,ₐ (ap mₐ f) (ap nₐ f)))))`
-`mult = (λ n Nat (λ m Nat (∧ a (ap compₐ,ₐ,ₐ mₐ nₐ)))`
-`mult2 = (λ n Nat (λ m Nat (ap (ap (Ap y Nat) (add x)) c0))`
+`add = (λ n Nat (λ m Nat (∧ a (λ f (→ a a) (ap compₐ,ₐ,ₐ (ap mₐ f) (ap nₐ f)))))`  
+`mult = (λ n Nat (λ m Nat (∧ a (ap compₐ,ₐ,ₐ mₐ nₐ)))`  
+`mult2 = (λ n Nat (λ m Nat (ap (ap (Ap y Nat) (add x)) c0))`  
 `exp = (λ x Nat (λ y Nat (ap (ap (Ap y Nat) (mult x)) c1)))`
 
 ## Exercise 28
@@ -21,8 +21,8 @@ See Exercise 32.
 
 ## Exercise 29
 
-`not = (λ b Bool (∧ a (λ x a (λ y a (ap bₐ y x)))))`
-`and = (λ u Bool (λ v Bool (∧ a (λ x a (λ y a (ap uₐ (ap vₐ x y) y))))))`
+`not = (λ b Bool (∧ a (λ x a (λ y a (ap bₐ y x)))))`  
+`and = (λ u Bool (λ v Bool (∧ a (λ x a (λ y a (ap uₐ (ap vₐ x y) y))))))`  
 `or  = (λ u Bool (λ v Bool (∧ a (λ x a (λ y a (ap uₐ x (ap vₐ x y)))))))`
 
 ## Exercise 30
@@ -31,7 +31,7 @@ See Exercise 32.
 
 ## Exercise 31
 
-`fst = (∧ τ₁ (∧ τ₂ (λ p (* τ₁ τ₂) ((ap (Ap p τ₁) (λ x τ₁ (λ y τ₂ x))))))`
+`fst = (∧ τ₁ (∧ τ₂ (λ p (* τ₁ τ₂) ((ap (Ap p τ₁) (λ x τ₁ (λ y τ₂ x))))))`  
 `snd = (∧ τ₁ (∧ τ₂ (λ p (* τ₁ τ₂) ((ap (Ap p τ₂) (λ x τ₁ (λ y τ₂ y))))))`
 
 ## Exercise 32

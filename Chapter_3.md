@@ -2,10 +2,10 @@
 
 ## Exercise 23
 
-`(→ Int Int) <: (→ Int Real)`
-`(→ Real Real) <: (→ Int Real)`
-`(→ Real Int) <: (→ Int Real)`
-`(→ Real Int) <: (→ Real Real)`
+`(→ Int Int) <: (→ Int Real)`  
+`(→ Real Real) <: (→ Int Real)`  
+`(→ Real Int) <: (→ Int Real)`  
+`(→ Real Int) <: (→ Real Real)`  
 `(→ Real Int) <: (→ Int Int)`
 
 ## Exercise 24
