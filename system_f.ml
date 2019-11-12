@@ -2,21 +2,8 @@ type 'a Nat = (('a -> 'a) -> ('a -> 'a))
 type 'a Bool = ('a -> ('a -> 'a))
 (* type 'a Pair = ('t1 -> 't2 -> 'a) -> 'a This does not work !!! *)
 
-fun Nat_to_int (n: int Nat) = n (fn x => x + 1) 0
-fun int_to_Nat (n : int)
-    = (if n = 0
-        then c0
-        else succ (int_to_Nat (n - 1))) : 'a Nat
-
 val c0:'a Nat = fn f:('a -> 'a) => fn x:'a => x
 val c1:'a Nat = fn f:('a -> 'a) => fn x:'a => f x
-
-fun Bool_to_bool (b : bool Bool)
-    = (b true false)
-
-val fton = Nat_to_int
-val ntof = int_to_Nat
-val Btob = Bool_to_bool
 
 fun comp
      (g : ('b -> 'c))
@@ -42,6 +29,21 @@ fun exp (x : 'a Nat) (y : ('a Nat) Nat)
 fun is_zero (n : 'a Nat)
     = (fn x:'a => fn y:'a => (n (fn dummy => y) x))
     : 'a Bool
+
+fun Nat_to_int (n: int Nat) = n (fn x => x + 1) 0
+fun int_to_Nat (n : int)
+    = (if n = 0
+        then c0
+        else succ (int_to_Nat (n - 1))) : 'a Nat
+
+
+
+fun Bool_to_bool (b : bool Bool)
+    = (b true false)
+
+val fton = Nat_to_int
+val ntof = int_to_Nat
+val Btob = Bool_to_bool
 
 
 (* Temporary testing via booleans *)
